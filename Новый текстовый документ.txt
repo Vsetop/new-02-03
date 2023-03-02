@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name,age,height,weight,nationality,sex){
+            this.name=name;
+            this.age=age;
+            this.height=height;
+            this.weight=weight;
+            this.nationality=nationality;
+            this.sex=sex;
+            }
+           SayHi(object,string){
+            console.log(object.name+  " " + string)
+           } 
+           HisWeight(object){
+            console.log(object.weight)
+           } 
+           HisHeight(object){
+            console.log(object.height)
+           } 
+        }
+        let newCharacter = new Person(prompt("Ваше имя?"), '16', '180', '100', 'Русский', 'true')
+        let newCharacter1 = new Person(prompt("Ваше имя?"), '16', '180', '100', 'Русский', 'true')
+        let newCharacter2 = new Person("Anton", '16', '160',prompt("Ваш вес?") , 'Русский', 'true')
+        let newCharacter3 = new Person("Stepan", '16',prompt("Ваше рост?") , '100', 'Русский', 'true')
+        console.log(newCharacter)
+        newCharacter.SayHi(newCharacter1,"Привет!");
+        newCharacter2.HisWeight(newCharacter2)
+        newCharacter3.HisHeight(newCharacter3)
+    </script>
+</body>
+</html>
